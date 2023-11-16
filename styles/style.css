@@ -2,14 +2,161 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Roboto+Mono&display=swap');
 
 *{
+    margin: 0;
+    padding: 0;
 
-    padding: 5px, 2px, 2px, 5px;
-
+    
 }
 body{
     font-family: 'Inter', sans-serif;
+    
 }
-header{
-    display: flexbox;
+#grid-container-main{
 
+    display: grid;
+    gap: .2rem;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat (7,auto);
+    grid-template-areas: "nav"
+                         "part1"
+                         "part2"
+                         "part3"
+                         "part4"
+                         "part5"
+                         "footer";   
+}
+
+#nav_main{
+    grid-area: "nav";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem 0 .5rem 0;
+}
+#nav_main ul{
+    list-style: none;
+    text-align: center;
+}
+#nav_main ul li{
+    padding: .3rem 0 .3rem 0;
+}
+
+#nav_main ul li button{
+    background-color: #e6bd43;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px 32px;
+}
+#nav_main ul li a{
+    text-decoration: none;
+    color: #000;
+}
+#part1{
+    grid-area: "part1";
+    background-image: url("../ressurser/bkg_part1.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-size: cover;
+    position: relative;
+}
+#part1::after{
+    content: "";
+    background-color: rgba(128,128,128,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+}
+#part1 h2{
+    padding: 2rem 0 1rem 0;
+}
+#part1 p{
+    padding: 1rem 0 1.5rem 0;
+    margin: 0 3rem 0 3rem;
+    text-align: center;
+
+}
+#part1 button{
+    background-color: #e6bd43;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding:.5rem 1.4rem;
+}
+#part1 button a{
+    text-decoration: none;
+    color: #000;
+}
+#part2{
+    grid-area: "part2";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem 4rem .5rem 4rem;
+}
+#part2 h2{
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+}
+#part2 p{
+    padding: 1rem 0 1.5rem 0;
+    text-align: center;
+}
+
+#part3{
+    grid-area: "part3";
+    background-color: #e6bd43;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem 0 .5rem 0;
+    padding: .5rem 0 1rem 0;
+}
+#part3 img{
+    width: 250px;
+    height: auto;
+    aspect-ratio: 1/1;
+    padding: 2rem 0 2rem 0;
+    
+}
+#part3 h2{
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+}
+#part3 p{
+    padding: 1rem 0 1.5rem 0;
+    margin: 0 3rem 0 3rem;
+    text-align: center;
+}
+#part3 button a{
+    text-decoration: none;
+    color: #000;
+    
+}
+#part3 button{
+    background-color: #e6bd43;
+    border:1px solid #000;
+    cursor: pointer;
+    text-align: center;
+    padding:.5rem 1.4rem;
+}
+#part4{
+    grid-area:"part4";
+}
+#part5{
+    grid-area: "part5";
+}
+#footer{
+    grid-area: "footer";
 }
