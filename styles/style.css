@@ -54,7 +54,7 @@ body{
     text-decoration: none;
     color: #000;
 }
-#part1{
+#part1_main{
     grid-area: "part1";
     background-image: url("../ressurser/bkg_part1.png");
     display: flex;
@@ -65,7 +65,7 @@ body{
     background-size: cover;
     position: relative;
 }
-#part1::after{
+#part1_main::after{
     content: "";
     background-color: rgba(128,128,128,0.6);
     position: absolute;
@@ -76,27 +76,27 @@ body{
     z-index: -1;
 
 }
-#part1 h2{
+#part1_main h2{
     padding: 2rem 0 1rem 0;
 }
-#part1 p{
+#part1_main p{
     padding: 1rem 0 1.5rem 0;
     margin: 0 3rem 0 3rem;
     text-align: center;
 
 }
-#part1 button{
+#part1_main button{
     background-color: #e6bd43;
     border: none;
     cursor: pointer;
     text-align: center;
     padding:.5rem 1.4rem;
 }
-#part1 button a{
+#part1_main button a{
     text-decoration: none;
     color: #000;
 }
-#part2{
+#part2_main{
     grid-area: "part2";
     display: flex;
     flex-direction: column;
@@ -104,16 +104,16 @@ body{
     align-items: center;
     margin: .5rem 4rem .5rem 4rem;
 }
-#part2 h2{
+#part2_main h2{
     padding: 2rem 0 1rem 0;
     text-align: center;
 }
-#part2 p{
+#part2_main p{
     padding: 1rem 0 1.5rem 0;
     text-align: center;
 }
 
-#part3{
+#part3_main{
     grid-area: "part3";
     background-color: #e6bd43;
     display: flex;
@@ -123,35 +123,35 @@ body{
     margin: .5rem 0 .5rem 0;
     padding: .5rem 0 1rem 0;
 }
-#part3 img{
+#part3_main img{
     width: 250px;
     height: auto;
     aspect-ratio: 1/1;
     padding: 2rem 0 2rem 0;
     
 }
-#part3 h2{
+#part3_main h2{
     padding: 2rem 0 1rem 0;
     text-align: center;
 }
-#part3 p{
+#part3_main p{
     padding: 1rem 0 1.5rem 0;
     margin: 0 3rem 0 3rem;
     text-align: center;
 }
-#part3 button a{
+#part3_main button a{
     text-decoration: none;
     color: #000;
     
 }
-#part3 button{
+#part3_main button{
     background-color: #e6bd43;
     border:1px solid #000;
     cursor: pointer;
     text-align: center;
     padding:.5rem 1.4rem;
 }
-#part4{
+#part4_main{
     grid-area:"part4";
     display: flex;
     flex-direction: column;
@@ -159,27 +159,27 @@ body{
     align-items: center;
     padding: .5rem 0 1rem 0;
 }
-#part4 h2{
+#part4_main h2{
     font-size: 20px;
     font-weight: bolder;
 }
-#part4 ul{
+#part4_main ul{
     list-style: none;
     text-align: center;
 }
-#part4 ul li img{
+#part4_main ul li img{
     width: 120px;
     height: auto;
     aspect-ratio: 1/1;
     padding: 1.2rem 0 0 0;
 }
-#part4 ul li p{
+#part4_main ul li p{
     margin: 0 4rem 0 4rem;
     padding: .2rem 0 .2rem 0;
     font-size: 12px;
     font-weight: bolder;
 }
-#part5{
+#part5_main{
     grid-area: "part5";
     background-color: #d3cece;
     justify-content: center;
@@ -187,7 +187,7 @@ body{
     padding: .2rem 0 2rem 0;
     
 }
-#part5 ul{
+#part5_main ul{
     list-style: none;
     text-align: center;
     justify-content: center;
@@ -196,13 +196,13 @@ body{
     padding: 0 0 1rem 0;
 
 }
-#part5 ul li input{
+#part5_main ul li input{
     border: none;
     padding: 15px 32px;
 
 
 } 
-#part5 ul li button{
+#part5_main ul li button{
     background-color: #e6bd43;
     border:none;
     cursor: pointer;
@@ -211,7 +211,7 @@ body{
     
 }
 
-#part5 h2{
+#part5_main h2{
     padding: 2rem 0 1rem 0;
     text-align: center;
     font-size: 20px;
@@ -229,4 +229,127 @@ body{
     height: auto;
     aspect-ratio: 1/1;
     padding: 2rem;
+}
+
+/*---------------settings mobil-portfolio----------------------------- */
+#grid-container-portafolio{
+
+    display: grid;
+    /* gap: .2rem; */
+    
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat (7,auto);
+    grid-template-areas: "nav"
+                         "part1"
+                         "part2"
+                         "part3"
+                         "part4"
+                         "part5"
+                         "footer";   
+}
+#nav_por{
+    grid-area: "nav";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem 0 .5rem 0;
+}
+#nav_por ul{
+    list-style: none;
+    text-align: center;
+}
+#nav_por ul li{
+    padding: .3rem 0 .3rem 0;
+}
+
+#nav_por ul li button{
+    background-color: #e6bd43;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px 32px;
+}
+#nav_por ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+#part1_por{
+    grid-area: "part1";
+    background-image: url("../ressurser/bkg_part1.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 0 8rem 0;
+    background-size: cover;
+    position: relative;
+}
+#part1_por::after{
+    content: "";
+    background-color: rgba(128,128,128,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+#part2_por{
+    grid-area: "part3";
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 0 3rem 0 3rem;
+    padding: .5rem 0 1rem 0;
+}
+#part2_por #subtitle{
+    text-align: center;
+}
+#part2_por .buttons_port{
+    list-style: none;
+    text-align: left;
+}
+#part2_por .buttons_port li{
+    padding: .5rem 1rem .9rem 1rem;
+}
+#part2_por .buttons_port li button{
+    border: 1px solid #000;
+    padding: 10px 20px;
+    margin: 0 15px 0 15px;
+    background-color: #ffff;
+}
+
+
+
+
+
+
+.buttons_port li p{
+    border: 1px solid #000;
+    text-align: left;
+}
+#part3_por{
+    grid-area: "part3";
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3rem 0 3rem;
+    padding: .5rem 0 1rem 0;
+}
+#part3_por ul{
+    list-style: none;
+}
+#part3_por ul li img{
+    width: 290px;
+    max-width: 670px;
+    height: auto;
+    aspect-ratio: 1/1;
+    padding: 1.2rem 0 0 0;
 }
