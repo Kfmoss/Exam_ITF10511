@@ -14,7 +14,7 @@ body{
 #grid-container-main{
 
     display: grid;
-    gap: .2rem;
+    /* gap: .2rem; */
     
     grid-template-columns: 1fr;
     grid-template-rows:repeat (7,auto);
@@ -153,10 +153,80 @@ body{
 }
 #part4{
     grid-area:"part4";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 0 1rem 0;
+}
+#part4 h2{
+    font-size: 20px;
+    font-weight: bolder;
+}
+#part4 ul{
+    list-style: none;
+    text-align: center;
+}
+#part4 ul li img{
+    width: 120px;
+    height: auto;
+    aspect-ratio: 1/1;
+    padding: 1.2rem 0 0 0;
+}
+#part4 ul li p{
+    margin: 0 4rem 0 4rem;
+    padding: .2rem 0 .2rem 0;
+    font-size: 12px;
+    font-weight: bolder;
 }
 #part5{
     grid-area: "part5";
+    background-color: #d3cece;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem 0 2rem 0;
+    
 }
-#footer{
+#part5 ul{
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 1rem 0;
+
+}
+#part5 ul li input{
+    border: none;
+    padding: 15px 32px;
+
+
+} 
+#part5 ul li button{
+    background-color: #e6bd43;
+    border:none;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px 32px;
+    
+}
+
+#part5 h2{
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+#footer_main{
     grid-area: "footer";
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+}
+#footer_main img{
+    width: 60px;
+    height: auto;
+    aspect-ratio: 1/1;
+    padding: 2rem;
 }
