@@ -3,13 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- map settings -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <!-- map settings -->
     <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+    <title>About</title>
 </head>
 <body>
-    <header>
+    <div id="grid-container-about">
+        <header id="nav_abo">
+            <img id="logo1" src="ressurser/logo1.png" alt="">
+            <ul>
+                <li><a id="linkHome" href="index.html">Home</a></li>
+                <li><a id="linkProducts" href="portafolio.html">Portafolio</a></li>
+                <li><a id="linkAbout" href="about.html">About</a></li>
+                <li><button><a id="linkContact" href="about.html">Contact</a></button></li>
+            </ul>
+        </header>
+        <section id="part1_abo">
+          
+            
+            
+        </section >
+        <section id="part2_abo">
         
-    </header>
+        </section>
+        <section id="part3_abo">
+         
+            
+    
+        </section>
+        <section id="part4_abo">
+            
+    
+        </section>
+        <section id="part5_abo">
+            
+            
+    
+        </section>
+        <section id="part6_abo">
+
+            <div id="map">
+                
+            </div>
+
+        </section>
+        <footer id="footer_abo">
+            <img id="logo_bottom_abo" src="ressurser/logo1.png" alt="">
+            <ul>
+                <li><p><img src="ressurser/facebook.svg" alt=""></p></li>
+                <li><p><img src="ressurser/linkedin.svg" alt=""></p></li>
+                <li><p><img src="ressurser/instagram.svg" alt=""></p></li>
+            </ul>
+            
+        
+        </footer>
+
+    </div>
+        <script>
+            // map settings
+            var map = L.map('map').setView([59.128998, 11.352383], 13);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+            L.marker([59.128998, 11.352383]).addTo(map);
+            L.icon({
+                iconUrl: 'ressurser/marker.png',
+                iconSize: [38, 95],
+                iconAnchor: [22, 94],
+                popupAnchor: [-3, -76]
+            });
+    
+            
+        </script>
+    
     
 </body>
 </html>
