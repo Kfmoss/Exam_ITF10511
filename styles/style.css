@@ -64,11 +64,13 @@ body{
     padding: 2rem;
     background-size: cover;
     position: relative;
+    z-index: 1;
 }
 #part1_main::after{
     content: "";
-    background-color: rgba(128,128,128,0.6);
+    background-color: rgba(128,128,128,0.9);
     position: absolute;
+    display: block;
     top: 0;
     left: 0;
     bottom: 0;
@@ -433,12 +435,75 @@ body{
     cursor: pointer;
     text-align: center;
     padding: 15px 32px;
+    
 }
 #nav_abo ul li a{
     text-decoration: none;
     color: #000;
 }
+#part1_abo{
+    grid-area: "part1";
+    background-image: url("../ressurser/bkg_part1.png");
+    background-size:cover;
+    padding: 9rem 0 9rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.flotante{
+    overflow:auto;
+    height: 20rem;
+    width: auto;
+    aspect-ratio: 1/1;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+.flotante h3{
+    padding: .5rem 0 .5rem 0;
+    font-size: 15px;
+}
+.flotante h2{
+    padding: 1rem 0 1rem 0;
+    font-weight:600;
+}
 
+.flotante p{
+    padding: .5rem 2rem .5rem 2rem;
+    font-size: 12px;
+}
+.flotante button{
+    background-color: #e6bd43;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 1rem;
+    padding:.5rem 1.4rem;
+}
+#part1_abo .flotante::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+
+}
+
+#part4_abo .flotante{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 2rem;
+    z-index: 1;
+
+}
 
 
 
@@ -469,7 +534,118 @@ body{
     aspect-ratio: 1/1;
     padding: 2rem;
 }
+#part2_abo{
+    grid-area:"part2";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 0 1rem 0;
+}
+#part2_abo h2{
+    font-size: 20px;
+    font-weight: bolder;
+}
+#part2_abo ul{
+    list-style: none;
+    text-align: center;
+}
+#part2_abo ul li img{
+    width: 120px;
+    height: auto;
+    aspect-ratio: 1/1;
+    padding: 1.2rem 0 0 0;
+}
+#part2_abo ul li p{
+    margin: 0 4rem 0 4rem;
+    padding: .2rem 0 .2rem 0;
+    font-size: 12px;
+    font-weight: bolder;
+}
+#part3_abo{
+    grid-area: "part3";
+    background-color: #e6bd43;
+    padding: 5rem 0 5rem 0;
+}
+#part3_abo h2{
 
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 0 0 2rem 0;
+}
+#part3_abo ul{
+    list-style: none;
+    text-align: center;
+}
+#part3_abo ul li{
+    padding: .5rem 0 .3rem 0;
+}
+#part3_abo ul li img{
+    width: 7rem;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+#part4_abo #contact_us{
+
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 0 0 2rem 0;
+}
+#part4_abo{
+    grid-area: "part4";
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    background-color:#f7f7f7;
+}
+#part4_abo #subtitle_form{
+    padding: 0 0 2rem 0;
+    font-size: 17px;
+}
+#part4_abo form input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+#message_form{
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+#part4_abo form button{
+    background-color: #e6bd43;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px 32px;
+}
+#contact_info{
+    font-size: 22px;
+    padding: 1rem  0 1rem 0;
+}
+#part4_abo p{
+    font-size: 12px;
+    padding: 0 0 1rem 0;
+
+}
+#part4_abo .infox{
+    list-style: none;
+    text-align:left;
+} 
+#part4_abo .infox li{
+    padding: .7rem 0 .7rem 0;
+    display: flex;
+
+}
+#part4_abo .infox li img{
+    width: 20px;
+    height: auto;
+    aspect-ratio: 1/1;
+    padding: 0 1rem 0 0;
+}
 
 #map{
     height: 12rem;
