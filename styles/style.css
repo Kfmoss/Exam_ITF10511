@@ -306,7 +306,7 @@ body{
 
 
 #part2_por{
-    grid-area: "part3";
+    grid-area: "part2";
     background-color: #ffff;
     display: flex;
     flex-direction: column;
