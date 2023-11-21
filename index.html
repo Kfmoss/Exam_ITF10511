@@ -7,17 +7,22 @@
     <title>Forside</title>
 </head>
 <body>
-    <div id="grid-container-main">
+    <div id="grid-container-main" class="grid-container-main">
         <header id="nav_main">
-            <img id="logo1_main" src="ressurser/logo1.png" alt="">
-            <ul>
+            <img id="logo1_main" class="logo1_main" src="ressurser/logo1.png" alt="">
+            <ul class="links">
                 <li><a id="linkHome" href="#">Home</a></li>
                 <li><a id="linkProducts" href="portafolio.html">Portafolio</a></li>
                 <li><a id="linkAbout" href="about.html">About</a></li>
-                <li><button onclick="window.location.href='about.html'">Contact</button></li>
+                <li><a id="contact_link" href="about.html">Contact</a></li>
+                <!-- <li class="contact_btn"><button onclick="window.location.href='about.html'">Contact</button></li> -->
             </ul>
         </header>
-        <section id="part1_main">
+        <section id="except_mobile" class="part1_main_video">
+            <video autoplay loop muted plays-inline class="bkg-video">
+                <source src="ressurser/mountains.mp4" type="video/mp4">
+
+            </video>
 
             <h2>
                 Compeling headline
@@ -27,7 +32,21 @@
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
             </p> 
         
-            <button onclick="window.location.href='about.html'">Read more service</button>
+            <button onclick="window.location.href='about.html'">Read more about our services</button>
+
+
+        </section>
+        <section id="part1_main" >
+
+            <h2>
+                Compeling headline
+            </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </p> 
+        
+            <button onclick="window.location.href='about.html'">Read more about our services</button>
         </section >
         <section id="part2_main">
             <h2>
@@ -42,16 +61,18 @@
         </section>
         <section id="part3_main">
             <img src="ressurser/boxFrame.png" alt="">
-            <h2>About our company</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
-            </p>
-            <button onclick="window.location.href='about.html'">Read more about us</button>
-    
+            <div>
+                <h2>About our company</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+                </p>
+                <button onclick="window.location.href='about.html'">Read more about us</button>
+        
+            </div>
         </section>
         <section id="part4_main">
             <h2>Our services</h2>
@@ -76,6 +97,20 @@
             </ul>
     
         </section>
+
+        <section id="part4_main_desk">
+            <h2>Our services</h2>
+            <ul>
+                <li><h3>Branding</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua.</p></li>
+                <li><h3>Design</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua.</p></li>
+                <li><h3>Development</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua.</p></li>
+                <li><h3>Support</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua.</p></li>
+            </ul>
+        </section>
         <section id="part5_main">
             <h2>Sing up for our newsletter</h2>
             <ul>
@@ -87,7 +122,15 @@
     
         </section>
         <footer id="footer_main">
-            <img src="ressurser/logo1.png" alt="">
+            <img id="img_footer_main" src="ressurser/logo1.png" alt="">
+            <div class="footer_main_desk">
+                <ul class="r2">
+                    <li><img src="ressurser/logo1.png" alt=""></li>
+                    <li><h3>Copyright Company</h3></li>
+                    <li><img src="ressurser/facebook.svg" alt=""></li>
+                </ul>
+                
+            </div>
         
         </footer>
 
