@@ -899,6 +899,7 @@
     }
     #footer_main{
         grid-area: "footer";
+        background-color: #252525 ;
 
     }
     .footer_main_desk .r2{
@@ -906,9 +907,24 @@
         list-style: none;
         justify-content: space-between;
         align-items: center;
+    }
+    .r2 .smedia img{
+        width: 5rem;
+        height:auto;
+        aspect-ratio: 1/1;
+        padding: 0 10px 0 10px;
+        fill: #f7f7f7;
 
-   
-
+    }
+    .r2 img{
+        width: 5rem;
+        height: auto;
+        aspect-ratio: 1/1;
+        padding: 5rem 10px 5rem 10px;
+    }
+    .r2 h3{
+        color: #ffff;
+        padding: 0 0 0 3rem;
     }
 
 
