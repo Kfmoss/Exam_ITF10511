@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Roboto+Mono&display=swap');
 @media only screen and (max-width:430px){
     *{
         margin: 0;
@@ -672,13 +672,21 @@
 
 
 
-/*---------------settings pad - main----------------------------- */
+/*---------------settings screen - main----------------------------- */
 @media only screen and (min-width:600px){
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+
     *{
         margin: 0;
         padding: 0;
         
         
+    }
+    body{
+        font-family: 'Inter', sans-serif;
+
+
     }
     #part1_main{
         display: none;
@@ -926,6 +934,117 @@
         color: #ffff;
         padding: 0 0 0 3rem;
     }
+
+/* ----------------------portfolio desk ---------------------*/
+    #grid-container-portafolio{
+        display: grid;
+        
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat (7,auto);
+        grid-template-areas: "nav"
+                             "part1"
+                             "part2"
+                             "part3"
+                             "part4"
+                             "part5"
+                             "footer";
+
+    }
+    #grid-container-portafolio #nav_por{
+        grid-area: "nav";
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    #grid-container-portafolio #nav_por .r0 {
+        display: flex;
+        padding:0 .5rem 0 0;
+        align-items:center;
+        list-style: none;
+    }
+    #grid-container-portafolio .r0 li a{
+        padding: 0 .5rem 0  .5rem;
+        text-decoration: none;
+        color:#000;
+    }
+    .r0 button{
+        border: none;
+        background-color: #e6bd43;
+        padding: 15px 30px;
+
+    }
+    #nav_por #logo1{
+        width: 6rem;
+        height: auto;
+        aspect-ratio: 1/1;
+        padding: .5rem;
+    }
+
+    #part1_por{
+        grid-area: "part1";
+        background-image: url("../ressurser/bkg_part1.png");
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        /* padding: 4rem 4rem 4rem 4rem; */
+        position: relative;
+        background-size: cover;
+        z-index: 1;
+
+    }
+    #part1_por::after{
+        content: "";
+        background-color: rgba(128,128,128,0.6);
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+    #part1_por h2{
+
+        font-size: 45px;
+        padding: 4rem 0 0 0;
+
+    }
+    #part2_por{
+        grid-area: "part2";
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 3rem 5rem 3rem ;
+        margin: 1rem 0 1rem 0;
+
+    }
+    #part2_por #subtitle{
+        font-size: 40px;
+        padding: 0 0 1rem .5rem;
+    }
+    #part2_por .r1{
+        width: 100%;
+        border: 1px solid #e6bd43;
+        margin: 1rem 0 2rem 0;
+    }
+    #part2_por .buttons_port{
+        display: flex;
+        list-style: none;
+    }
+    #part2_por .buttons_port{
+        padding: 0 1rem 0 0;
+    }
+    #part2_por .buttons_port li button{
+        margin: 0 1rem 0 0;
+    }
+
+
+
+
+
+
 
 
 
