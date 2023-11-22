@@ -950,6 +950,7 @@
                              "footer";
 
     }
+
     #grid-container-portafolio #nav_por{
         grid-area: "nav";
         font-size: 20px;
@@ -969,12 +970,14 @@
         text-decoration: none;
         color:#000;
     }
-    .r0 button{
+    #grid-container-portafolio .r0 li .contacto{
+        
         border: none;
         background-color: #e6bd43;
         padding: 15px 30px;
 
     }
+   
     #nav_por #logo1{
         width: 6rem;
         height: auto;
@@ -1038,7 +1041,47 @@
     }
     #part2_por .buttons_port li button{
         margin: 0 1rem 0 0;
+        border: none;
+        background-color: #e6bd43;
+        padding: 15px 30px;
+
     }
+
+    #part3_por{
+        grid-area: "part3";
+        padding: 5rem 3rem 5rem 3rem ;
+        margin: 1rem 0 1rem 0;
+    }
+
+    #part3_por #branding{
+        font-size: 40px;
+        padding: 0 0 1rem .5rem;
+    }
+    #part3_por hr{
+        width: 100%;
+        border: 1px solid #e6bd43;
+        margin: 1rem 0 2rem 0;
+    }
+    .br_ex{
+        list-style: none;
+        display: flex; 
+        justify-content:space-between;
+    }
+    .br_ex li img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+    .br_ex #no_desk{    
+        width: 35rem;
+        height: auto;
+        aspect-ratio: 1/1;
+        order: 1;
+
+    }
+
+
+
 
 
 
