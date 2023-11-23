@@ -1052,6 +1052,9 @@
         padding: 5rem 3rem 5rem 3rem ;
         margin: 1rem 0 1rem 0;
     }
+    #part3_por p{
+        padding: 0 0 5rem 0;
+    }
 
     #part3_por #branding{
         font-size: 40px;
@@ -1066,19 +1069,78 @@
         list-style: none;
         display: flex; 
         justify-content:space-between;
+    
     }
     .br_ex li img{
+      
         width: 100%;
         height: auto;
         aspect-ratio: 1/1;
+        margin: 2rem 0 2rem 0;
     }
-    .br_ex #no_desk{    
-        width: 35rem;
-        height: auto;
+    #break{
+        list-style: none;
+    }
+    #break img{    
+        width: 500px;
+        height: 50%;
         aspect-ratio: 1/1;
-        order: 1;
+        margin: 2rem 0 2rem 0;
+    }
+
+    #part3_por #design{
+        font-size: 40px;
+        padding: 0 0 1rem .5rem;
 
     }
+    #design hr{
+        width: 100%;
+        border: 1px solid #e6bd43;
+        margin: 1rem 0 2rem 0;
+    }
+    .ds_ex p{
+        padding: 0 0 5rem 0;
+
+    }
+
+    #part3_por .ds_ex{
+        list-style: none;
+        display: flex; 
+        justify-content:space-between;
+    }
+    #part3_por .ds_ex li:last-child{
+        display: none;
+    }
+
+    #part3_por #development{
+        font-size: 40px;
+        padding: 0 0 1rem .5rem;
+
+    }
+    #design hr{
+        width: 100%;
+        border: 1px solid #e6bd43;
+        margin: 1rem 0 2rem 0;
+    }
+
+    #part3_por .dev_ex{
+        list-style: none;
+        display: flex; 
+        justify-content:space-around
+    }
+    #part3_por .dev_ex li:nth-child(-n+2){
+        display: none;
+    }
+    .dev_ex li img{
+        width: auto;
+        height: 100%;
+        aspect-ratio: 1/1;
+        margin: 2rem 0 2rem 0;
+    }
+
+
+    
+    
 
 
 
