@@ -408,6 +408,11 @@
         aspect-ratio: 1/1;
         padding: 2rem;
     }
+    #footer_por h3{
+        color: #ffff;
+        font-size: 15px;
+    
+    }
     /*---------------settings mobil-about----------------------------- */
     
     
@@ -440,18 +445,18 @@
     #nav_abo ul{
         list-style: none;
         text-align: center;
+        padding: 0 0 1rem 0;
     }
     #nav_abo ul li{
         padding: .3rem 0 .3rem 0;
     }
     
-    #nav_abo ul li button{
+    #nav_abo .list_links li #contact{
         background-color: #e6bd43;
         border: none;
         cursor: pointer;
         text-align: center;
-        padding: 15px 32px;
-        
+        padding: 11px 32px;
     }
     #nav_abo ul li a{
         text-decoration: none;
@@ -905,36 +910,42 @@
     #img_footer_main{
         display: none;
     }
+
+
+
     #footer_main{
         grid-area: "footer";
-        background-color: #252525 ;
-
-    }
-    .footer_main_desk .r2{
+        background-color: #252525;
         display: flex;
-        list-style: none;
         justify-content: space-between;
         align-items: center;
     }
-    .r2 .smedia img{
-        width: 5rem;
-        height:auto;
-        aspect-ratio: 1/1;
-        padding: 0 10px 0 10px;
-        fill: #f7f7f7;
+    #footer_main h3{
+        color: #ffff;
 
     }
-    .r2 img{
+    #footer_main ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #footer_main ul li img{
+        padding: 1rem 1rem 1rem 0;
         width: 5rem;
         height: auto;
         aspect-ratio: 1/1;
-        padding: 5rem 10px 5rem 10px;
     }
-    .r2 h3{
-        color: #ffff;
-        padding: 0 0 0 3rem;
+    #footer_main img{
+        padding: .5rem 0 0 0; 
+        width: 5rem;
+        height: auto;
+        aspect-ratio: 1/1;
+        padding: 2rem;
     }
-
+    
+ 
 /* ----------------------portfolio desk ---------------------*/
     #grid-container-portafolio{
         display: grid;
@@ -992,7 +1003,7 @@
         justify-content: center;
         width: 100%;
         height: 100%;
-        /* padding: 4rem 4rem 4rem 4rem; */
+        padding: 4rem 0  4rem 0;
         position: relative;
         background-size: cover;
         z-index: 1;
@@ -1020,7 +1031,7 @@
         display: flex;
         flex-direction: column;
         padding: 5rem 3rem 5rem 3rem ;
-        margin: 1rem 0 1rem 0;
+        margin: 5rem 0 1rem 0;
 
     }
     #part2_por #subtitle{
@@ -1137,29 +1148,140 @@
         aspect-ratio: 1/1;
         margin: 2rem 0 2rem 0;
     }
+    footer{
+        grid-area: "footer";
+        background-color: #252525;
+        display: flex;
+     
+        justify-content: space-between;
+        align-items: center;
+    }
+    #footer_por h3{
+        color: #ffff;
 
+    }
+    #footer_por ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #footer_por ul li p img{
+        padding: 1rem 1rem 1rem 1rem;
+        width: 5rem;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+    #footer_por #logo_bottom{
+        padding: .5rem 0 0 0; 
+        width: 5rem;
+        height: auto;
+        aspect-ratio: 1/1;
+        padding: 2rem;
+    }
 
+    /* ----------------------about desk ---------------------*/
+    #grid-container-about{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat (7,auto);
+        grid-template-areas: "nav"
+                             "part1"
+                             "part2"
+                             "part3"
+                             "part4"
+                             "part5"
+                             "footer";
+
+    }
+
+    #grid-container-about #nav_abo{
+        grid-area: "nav";
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    #grid-container-about #nav_abo .list_links {
+        display: flex;
+        padding:0 .5rem 0 0;
+        align-items:center;
+        list-style: none;
+    }
+    #nav_abo #logo1{
+        width: 6rem;
+        height: auto;
+        aspect-ratio: 1/1;
+        padding: .5rem;
+    }
+
+    #grid-container-about .list_links li a{
+        padding: 0 .5rem 0  .5rem;
+        text-decoration: none;
+        color:#000;
+    }
+    #grid-container-about .list_links li #contact{
+        
+        border: none;
+        background-color: #e6bd43;
+        padding: 15px 30px;
+
+    }
+    #part1_abo{
+        grid-area: "part1";
+        background-image: url("../ressurser/bkg_part1.png");
+        background-size:cover;
+        padding: 9rem 0 9rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+    }
+    .flotante{
+        overflow:auto;
+        height: 25rem;
+        width: auto;
+        aspect-ratio: 1/1;
+        background-color: #f7f7f7;
+        text-align: center;
+    }
+    .flotante h3{
+        padding: .5rem 0 .5rem 0;
+        font-size: 15px;
+    }
+    .flotante h2{
+        padding: 1rem 0 1rem 0;
+        font-weight:600;
+    }
     
+    .flotante p{
+        padding: .5rem 2rem .5rem 2rem;
+        font-size: 12px;
+    }
+    .flotante button{
+        background-color: #e6bd43;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        margin: 1rem;
+        padding:.5rem 1.4rem;
+    }
+    #part1_abo .flotante::after{
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-    
-
-
-    
+    }
 
     
 
