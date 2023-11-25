@@ -1341,6 +1341,15 @@
         aspect-ratio: 1/1;
         padding: 0 2rem 2rem 2rem;
     }
+    #part4_abo{
+        grid-area: "part4";
+    }
+    #part4_abo #contact_us{
+        font-size: 35px;
+        padding: 4rem 0 4rem 0;
+        text-align: center;
+    }
+    #part4_abo 
 
 
 
