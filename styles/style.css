@@ -678,9 +678,12 @@
 
 
 /*---------------settings screen - main----------------------------- */
-@media only screen and (min-width:600px){
+@media only screen and (min-width:431px){
 
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+  #mybutton{
+    display: block;
+  }
 
     *{
         margin: 0;
@@ -1168,7 +1171,7 @@
         align-items: center;
     }
     #footer_por ul li p img{
-        padding: 1rem 1rem 1rem 1rem;
+        padding: 1rem 0 1rem 1rem;
         width: 5rem;
         height: auto;
         aspect-ratio: 1/1;
@@ -1343,13 +1346,147 @@
     }
     #part4_abo{
         grid-area: "part4";
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
     }
     #part4_abo #contact_us{
         font-size: 35px;
-        padding: 4rem 0 4rem 0;
-        text-align: center;
+        padding: 1.5rem 0 1.5rem 0;
     }
-    #part4_abo 
+    #part4_abo .desk_contact_form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      
+
+    }
+    #part4_Abo .desk_contact_form #source1{
+        display: flex;
+        justify-content: center;
+    }
+    #source1 #subtitle_form{
+        text-align: center;
+        font-size: 28px;
+        padding: 2rem 0 0 0 ;
+    }
+    #part4_abo .desk_contact_form #source1 form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 2rem 1rem 10rem ;
+    }
+    #source1 form #name, #subject{
+        padding: 15px;
+        
+    }
+    #source1 form #message_form{
+        padding: 12rem 35px 25px 35px;
+        margin: 0 0 1rem 0;
+
+
+    }
+    #source1 form label{
+        font-size: 22px;
+        padding: 1rem 0 1rem 0;
+    }
+    #source1 form button{
+        border: none;
+        background-color: #e6bd43;
+        padding: 15px 45px;
+        margin: auto;
+    }
+
+
+    #part4_abo .desk_contact_form #source2{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 10rem 1rem 2rem ;
+    }
+    #source2 #contact_info{
+        text-align: center;
+        font-size: 28px;
+        padding: 1rem 0 2rem 0;
+    
+    }
+    #source2 p {
+        padding: 0 0 2rem 0;
+        font-size: 17px;
+    }
+    #source2 .infox{
+        /* margin: auto; */
+        list-style: none;
+    }
+    #source2 .infox li{
+        display: flex;
+        align-items: center;
+        padding: 2.5rem 0 1.5rem 0;
+    }
+    .infox li img{
+        width: 4rem;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+    .infox li p, a{
+        font-size: 17px;
+        margin: 0 0 0 2rem;
+    }
+
+    #part6_abo{
+        grid-area: "part6";
+        padding: 2rem 0 1rem 0;
+
+
+    }
+    #part6_abo h2{
+        padding: 0 0 1rem 3rem;
+        font-size: 38px;
+    }
+    #part6_abo #map{
+        height: 25rem;
+        width: auto;
+        margin: 0 3rem 0 3rem;
+    }
+    #footer_abo{
+        grid-area: "footer";
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #footer_abo #logo_bottom_abo{
+        padding: 1rem 1rem 1rem 1rem;
+        width: 5rem;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+    #footer_abo h3{
+        color: #ffff;
+        text-align: center;
+        
+    }
+    #footer_abo ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #footer_abo ul li p img{
+        padding: 1rem 0 1rem 1rem;
+        width: 5rem;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+
+    
+    
+
+
+
+
+
 
 
 
