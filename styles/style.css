@@ -415,6 +415,33 @@
     }
     /*---------------settings mobil-about----------------------------- */
     
+    /* roll up button*/
+    #progress{
+        background-color: #03cc65;
+        position: fixed;
+        bottom:20px;
+        right: 10px;
+        height: 70px;
+        width: 70px;
+        display: grid;
+        place-items: center;
+        border-radius: 40%;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    #progress_value{
+        display: block;
+        height: calc(100% -15px);
+        width:calc(100% -15px);
+        background-color: #ffffff;
+        border-radius: 5px;
+        font-size: 18px;
+        padding: 2px;
+        place-items: center;
+
+    }
+    
+
     
     
     #grid-container-about{
@@ -688,6 +715,34 @@
   #mybutton{
     display: block;
   }
+
+    /* roll up button*/
+    #progress{
+        background-color: #03cc65;
+        position: fixed;
+        bottom:150px;
+        right: 10px;
+        height: 70px;
+        width: 70px;
+        display: grid;
+        place-items: center;
+        border-radius: 40%;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    #progress_value{
+        /* display: block; */
+        height: calc(100% -15px);
+        width:calc(100% -15px);
+        background-color: #ffffff;
+        border-radius: 5px;
+        font-size: 18px;
+        padding: 2px;
+        place-items: center;
+
+    }
+    
+
 
     *{
         margin: 0;
