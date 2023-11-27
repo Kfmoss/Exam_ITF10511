@@ -526,9 +526,6 @@
     
     }
     
-    
-    
-    
     #footer_abo{
         grid-area: "footer";
         background-color: #252525;
@@ -553,7 +550,7 @@
         width: 5rem;
         height: auto;
         aspect-ratio: 1/1;
-        padding: 2rem;
+        padding: 0.5rem;
     }
     #part2_abo{
         grid-area:"part2";
@@ -667,9 +664,16 @@
         aspect-ratio: 1/1;
         padding: 0 1rem 0 0;
     }
+    #part6_abo{
+        background-color: #f7f7f7;
+    }
+    #part6_abo h2{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
     
     #map{
-        height: 12rem;
+        height: 15rem;
     }
 
 
@@ -1436,6 +1440,7 @@
     #part6_abo{
         grid-area: "part6";
         padding: 2rem 0 1rem 0;
+        
 
 
     }
