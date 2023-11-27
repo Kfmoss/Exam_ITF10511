@@ -7,6 +7,35 @@
         
         
     }
+    /*
+        button scroll up 
+    */
+
+    #progress{
+        background-color: #03cc65;
+        position: fixed;
+        bottom:20px;
+        right: 10px;
+        height: 70px;
+        width: 70px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0,0,0,0.4);
+        cursor: pointer;
+    }
+    #progress_value{
+        display: block;
+        height:100%;
+        width:100%;
+        /* width:calc(100% -15px); */
+        background-color: #e6dcdc;
+        border-radius: 50%;
+        font-size: 25px;
+        text-align: center;
+        
+    }
+
     body{
         font-family: 'Inter', sans-serif;
         
@@ -48,17 +77,18 @@
     #nav_main ul{
         list-style: none;
         text-align: center;
+        padding: 0 0 1rem 0;
     }
     #nav_main ul li{
         padding: .3rem 0 .3rem 0;
     }
     
-    #nav_main ul li button{
+    #nav_main ul li #contact_link{
         background-color: #e6bd43;
         border: none;
         cursor: pointer;
         text-align: center;
-        padding: 15px 32px;
+        padding: 11px 32px;
     }
     #nav_main ul li a{
         text-decoration: none;
@@ -241,6 +271,43 @@
         grid-area: "footer";
         background-color: #252525;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer_main ul{
+        list-style: none;
+        display: inline-flex;
+    }
+    
+    #footer_main ul li img{
+        padding: 1rem 1rem 1rem 1rem;
+        width: 3rem;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+    #footer_main img{
+        /* padding: 2rem 0 2rem 0;  */
+        width: 5rem;
+        height: auto;
+        aspect-ratio: 1/1;
+        padding: 1rem;
+    }
+    #footer_main h3{
+        color: #ffff;
+        font-size: 15px;
+    
+    }
+
+
+
+
+
+
+    /* #footer_main{
+        grid-area: "footer";
+        background-color: #252525;
+        display: flex;
         justify-content: center;
     }
     #footer_main img{
@@ -249,6 +316,7 @@
         aspect-ratio: 1/1;
         padding: 2rem;
     }
+    #footer_main  */
     
     /*---------------settings mobil-portfolio----------------------------- */
     #grid-container-portafolio{
@@ -277,17 +345,18 @@
     #nav_por ul{
         list-style: none;
         text-align: center;
+        padding: 0 0 1rem 0;
     }
     #nav_por ul li{
         padding: .3rem 0 .3rem 0;
     }
     
-    #nav_por ul li button{
+    #nav_por ul li .contacto{
         background-color: #e6bd43;
         border: none;
         cursor: pointer;
         text-align: center;
-        padding: 15px 32px;
+        padding: 11px 32px;
     }
     #nav_por ul li a{
         text-decoration: none;
@@ -403,10 +472,10 @@
     }
     #footer_por #logo_bottom{
         /* padding: 2rem 0 2rem 0;  */
-        width: 60px;
+        width: 5rem;
         height: auto;
         aspect-ratio: 1/1;
-        padding: 2rem;
+        padding: 1rem;
     }
     #footer_por h3{
         color: #ffff;
@@ -415,33 +484,6 @@
     }
     /*---------------settings mobil-about----------------------------- */
     
-    /* roll up button*/
-    #progress{
-        background-color: #03cc65;
-        position: fixed;
-        bottom:20px;
-        right: 10px;
-        height: 70px;
-        width: 70px;
-        display: grid;
-        place-items: center;
-        border-radius: 40%;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        cursor: pointer;
-    }
-    #progress_value{
-        display: block;
-        height: calc(100% -15px);
-        width:calc(100% -15px);
-        background-color: #ffffff;
-        border-radius: 5px;
-        font-size: 18px;
-        padding: 2px;
-        place-items: center;
-
-    }
-    
-
     
     
     #grid-container-about{
@@ -553,6 +595,9 @@
     
     }
     
+    
+    
+    
     #footer_abo{
         grid-area: "footer";
         background-color: #252525;
@@ -577,7 +622,11 @@
         width: 5rem;
         height: auto;
         aspect-ratio: 1/1;
-        padding: 0.5rem;
+        padding: 1rem;
+    }
+    #footer_abo h3{
+        color: #ffffff;
+    
     }
     #part2_abo{
         grid-area:"part2";
@@ -691,16 +740,9 @@
         aspect-ratio: 1/1;
         padding: 0 1rem 0 0;
     }
-    #part6_abo{
-        background-color: #f7f7f7;
-    }
-    #part6_abo h2{
-        font-size: 1.5rem;
-        padding: 1rem;
-    }
     
     #map{
-        height: 15rem;
+        height: 12rem;
     }
 
 
@@ -716,34 +758,6 @@
     display: block;
   }
 
-    /* roll up button*/
-    #progress{
-        background-color: #03cc65;
-        position: fixed;
-        bottom:150px;
-        right: 10px;
-        height: 70px;
-        width: 70px;
-        display: grid;
-        place-items: center;
-        border-radius: 40%;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        cursor: pointer;
-    }
-    #progress_value{
-        /* display: block; */
-        height: calc(100% -15px);
-        width:calc(100% -15px);
-        background-color: #ffffff;
-        border-radius: 5px;
-        font-size: 18px;
-        padding: 2px;
-        place-items: center;
-
-    }
-    
-
-
     *{
         margin: 0;
         padding: 0;
@@ -755,6 +769,33 @@
 
 
     }
+    #progress{
+        background-color: #03cc65;
+        position: fixed;
+        bottom:150px;
+        right: 5px;
+        height: 70px;
+        width: 70px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    #progress_value{
+        display: block;
+        height:100%;
+        width:100%;
+        /* height: calc(100% -15px);
+        width:calc(100% -15px); */
+        background-color: #ffffff;
+        border-radius: 50%;
+        font-size: 25px;
+        text-align: center;
+
+    }
+
+
     #part1_main{
         display: none;
     }
@@ -805,6 +846,10 @@
         padding: 15px 30px;
 
     }
+    #contact_link:hover{
+        background-color: #000;
+        color:#e6bd43
+    }
    
     .grid-container-main .logo1_main{
         width: 6rem;
@@ -840,6 +885,11 @@
         text-align: center;
         padding: 15px 32px;
         margin: 0 15rem 0 15rem;
+    }
+    .grid-container-main #except_mobile button:hover{
+        background-color: #000;
+        color: #e6bd43;
+
     }
     .grid-container-main #except_mobile .bkg-video{
         position: absolute;
@@ -905,10 +955,13 @@
     }
     #part3_main div button{
         border: 2px solid black;
-        background-color: #ffff;
+        background-color: #ffffff;
         margin: 0 35% 0 35%;
         padding:22px 39px;
-
+    }
+    #part3_main div button:hover{
+        background-color: #000;
+        color: #ffffff;
     }
     #part4_main_desk{
         grid-area: "part4";
@@ -965,6 +1018,11 @@
         background-color: #e6bd43;
         padding: 15px;
     }
+    #part5_main ul button:hover{
+        background-color: #000;
+        color: #e6bd43;
+    }
+
     #part5_main ul input{
         padding: 13px 20px;
 
@@ -1050,6 +1108,10 @@
         padding: 15px 30px;
 
     }
+    #grid-container-portafolio .r0 li .contacto:hover{
+        background-color: #000;
+        color: #e6bd43;
+    }
    
     #nav_por #logo1{
         width: 6rem;
@@ -1119,6 +1181,11 @@
         padding: 15px 30px;
 
     }
+    #part2_por .buttons_port li button:hover{
+        background-color: #000;
+        color: #e6bd43;
+    }
+    
 
     #part3_por{
         grid-area: "part3";
@@ -1291,11 +1358,16 @@
         padding: 15px 30px;
 
     }
+    #grid-container-about .list_links li #contact:hover{
+        background-color: #000;
+        color: #e6bd43;
+    }
     #part1_abo{
         grid-area: "part1";
         background-image: url("../ressurser/bkg_part1.png");
         background-size:cover;
-        padding: 9rem 0 9rem 0;
+        /* padding: 9rem 0 9rem 0; */
+        padding: 4rem 0  4rem 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1332,6 +1404,10 @@
         text-align: center;
         margin: 1rem;
         padding:.5rem 1.4rem;
+    }
+    .flotante button:hover{
+        background-color: #000;
+        color:#e6bd43;
     }
     #part1_abo .flotante::after{
         content: "";
@@ -1495,7 +1571,6 @@
     #part6_abo{
         grid-area: "part6";
         padding: 2rem 0 1rem 0;
-        
 
 
     }
