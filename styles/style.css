@@ -29,7 +29,7 @@
         height:100%;
         width:100%;
         /* width:calc(100% -15px); */
-        background-color: #e6dcdc;
+        background-color: #a9d87a;
         border-radius: 50%;
         font-size: 25px;
         text-align: center;
@@ -376,6 +376,7 @@
         padding: 8rem 0 8rem 0;
         background-size: cover;
         position: relative;
+        z-index:1;
     }
     #part1_por::after{
         content: "";
@@ -390,6 +391,11 @@
     .r1{
        border: 1px solid #e6bd43;
        margin: 1rem 0 2rem 0;
+    }
+    #part1_por h2{
+        font-size: 30px;
+        color: #ffffff;
+
     }
     
     
@@ -892,7 +898,7 @@
         margin: 0 15rem 0 15rem;
     }
     .grid-container-main #except_mobile button:hover{
-        background-color: #000;
+        background-color: #030303;
         color: #e6bd43;
 
     }
