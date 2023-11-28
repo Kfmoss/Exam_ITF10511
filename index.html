@@ -11,16 +11,16 @@
     <script src="script.js"></script>
 
     <div id="grid-container-main" class="grid-container-main">
-        <div id="progress"> 
+        <div id="progress" title="To the top"> 
             <span id="progress_value">UP</span>
         </div>
         <header id="nav_main">
-            <img id="logo1_main" class="logo1_main" src="ressurser/logo1.png" alt="">
+            <img id="logo1_main" class="logo1_main" src="ressurser/logo1.png" onclick="'#'" alt="">
             <ul class="links">
                 <li><a id="linkHome" href="#">Home</a></li>
-                <li><a id="linkProducts" href="portafolio.html">Portafolio</a></li>
-                <li><a id="linkAbout" href="about.html">About</a></li>
-                <li><a id="contact_link" href="about.html">Contact</a></li>
+                <li><a id="linkProducts" href="portafolio.html" title="Our work">Portafolio</a></li>
+                <li><a id="linkAbout" href="about.html" title="About us">About</a></li>
+                <li><a id="contact_link" href="about.html#contact_us" title="Contact us">Contact</a></li>
                 <!-- <li class="contact_btn"><button onclick="window.location.href='about.html'">Contact</button></li> -->
             </ul>
         </header>
@@ -38,7 +38,7 @@
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
             </p> 
         
-            <button onclick="window.location.href='about.html'">Read more about our services</button>
+            <button onclick="window.location.href='#services_main'" >Read more about our services</button>
 
 
         </section>
@@ -52,7 +52,7 @@
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
             </p> 
         
-            <button onclick="window.location.href='about.html'">Read more about our services</button>
+            <button onclick="window.location.href='#services_main'" title="Our services">read more about our services</button>
         </section >
         <section id="part2_main">
             <h2>
@@ -76,12 +76,12 @@
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
                 </p>
-                <button onclick="window.location.href='about.html'">Read more about us</button>
+                <button onclick="window.location.href='about.html'" title="More about us">Read more about us</button>
         
             </div>
         </section>
         <section id="part4_main">
-            <h2>Our services</h2>
+            <h2 id="services_main">Our services</h2>
 
             <ul>
                 <li>  <img src="ressurser/people-group-solid(1).svg" alt=""> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod 
@@ -121,19 +121,19 @@
             <h2>Sing up for our newsletter</h2>
             <ul>
                 <li><input type="text"></li>
-                <li><button>Subscribe!</button></li>
+                <li><button title="Get updated">Subscribe!</button></li>
             </ul>
             
             
     
         </section>
         <footer id="footer_main">
-            <img src="ressurser/logo1.png" alt="">
+            <img src="ressurser/logo1.png" onclick="window.location.href='#'" alt="">
             <h3>Copyright Company Eksamen 2023</h3>
             <ul>
-                <li><img src="ressurser/instagram.svg" alt=""></li>
-                <li><img src="ressurser/facebook.svg" alt=""></li>
-                <li><img src="ressurser/linkedin.svg" alt=""></li>
+                <li><img title="instagram" src="ressurser/instagram.svg" alt=""></li>
+                <li><img title="Facebook" src="ressurser/facebook.svg" alt=""></li>
+                <li><img tiltle="linkedin" src="ressurser/linkedin.svg" alt=""></li>
                     
             </ul>
         

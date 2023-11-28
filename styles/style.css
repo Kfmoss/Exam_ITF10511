@@ -108,7 +108,7 @@
     }
     #part1_main::after{
         content: "";
-        background-color: rgba(128,128,128,0.9);
+        background-color: rgba(128,128,128,0.7);
         position: absolute;
         display: block;
         top: 0;
@@ -120,11 +120,14 @@
     }
     #part1_main h2{
         padding: 2rem 0 1rem 0;
+        color: #f3f2f2;
     }
     #part1_main p{
         padding: 1rem 0 1.5rem 0;
         margin: 0 3rem 0 3rem;
+        font-size: 17px;
         text-align: center;
+        color: #f3f2f2;
     
     }
     #part1_main button{
@@ -769,6 +772,7 @@
 
 
     }
+    /* settings scroll up button */
     #progress{
         background-color: #03cc65;
         position: fixed;
@@ -794,6 +798,7 @@
         text-align: center;
 
     }
+     /* settings scroll up button */
 
 
     #part1_main{
@@ -929,6 +934,7 @@
         padding: 7rem 9rem 7rem 9rem;
         margin:0 5rem 0 5rem;
         align-items: center;
+        background-color: #e6bd43;
 
     }
     #part3_main img{
@@ -1217,6 +1223,15 @@
         height: auto;
         aspect-ratio: 1/1;
         margin: 2rem 0 2rem 0;
+    }
+    #br1{
+        flex-grow: 1;
+    }
+    #br2{
+        flex-grow: 2;
+    }
+    #br3{
+        flex-grow: 3;
     }
     #break{
         list-style: none;

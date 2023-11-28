@@ -22,18 +22,18 @@
     <!-- javascript code button  -->
     <script src="script.js"></script>
     
-    <div id="grid-container-about">
+    <div id="grid-container-about" title="To the top">
         <div id="progress"> 
             <span id="progress_value">UP</span>
         </div>
         
         <header id="nav_abo">
-            <img id="logo1" src="ressurser/logo1.png" alt="">
+            <img id="logo1" src="ressurser/logo1.png" onclick="window.location.href='index.html'" title="Gå til main page">
             <ul class="list_links">
-                <li><a id="linkHome" href="index.html">Home</a></li>
-                <li><a id="linkProducts" href="portafolio.html">Portafolio</a></li>
-                <li><a id="linkAbout" href="about.html">About</a></li>
-                <li><a id="contact" href="about.html">Contact</a></li>
+                <li><a id="linkHome" href="index.html" title=" til Main page">Home</a></li>
+                <li><a id="linkProducts" href="portafolio.html" title="Our work">Portafolio</a></li>
+                <li><a id="linkAbout" href="about.html" title="About us">About</a></li>
+                <li><a id="contact" href="#contact_us" title="Contact us">Contact</a></li>
             </ul>
         </header>
         <section id="part1_abo">
@@ -49,7 +49,7 @@
                     Aliquam blandit nunc leo, volutpat eleifend orci commodo vitae. 
                     Quisque rutrum sem sit amet sollicitudin rhoncus.
                 </p>
-                <button onclick="window.location.href='#contact_us'">Get in touch with us</button>
+                <button onclick="window.location.href='#contact_us'" title="Send us a message">Get in touch with us</button>
 
             </div>
           
@@ -102,7 +102,7 @@
                         <label for="message_form">Your message</label><br>
                         <input type="text" id="message_form">
         
-                        <button>SEND</button>
+                        <button title="send a message">SEND</button>
                     </form>
                 </div>
                 <div id="source2">
